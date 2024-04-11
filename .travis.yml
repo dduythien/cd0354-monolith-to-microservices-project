@@ -27,8 +27,8 @@ script:
   - docker build -t udagram-api-user ./udagram-api-user
   - docker tag udagram-api-user dduythien/udagram-api-user:latest
 
-  - docker build -t udagram-reverseproxy ./udagram-reverseproxy
-  - docker tag udagram-reverseproxy dduythien/udagram-reverseproxy:latest
+  - docker build -t reverseproxy ./udagram-reverseproxy
+  - docker tag reverseproxy dduythien/reverseproxy:latest
 
   - docker build -t udagram-frontend ./udagram-frontend
   - docker tag udagram-frontend dduythien/udagram-frontend:latest
