@@ -15,7 +15,7 @@ spec:
         service: udagram-api-user
     spec:
       containers:
-        - image: dduythien/udagram-api-feed
+        - image: dduythien/udagram-api-user
           name: udagram-api-user
           imagePullPolicy: Always
           resources:
@@ -23,7 +23,7 @@ spec:
               memory: "512Mi"
               cpu: "250m"
             limits:
-              memory: "1024Mi"
+              memory: "2048Mi"
               cpu: "500m"
           env:
             - name: URL
